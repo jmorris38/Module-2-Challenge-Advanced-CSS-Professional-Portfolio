@@ -1,0 +1,220 @@
+/* Reset some default styles for better consistency */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Global styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f7f7f7;
+}
+
+/* Header styles */
+header {
+    background-color: #2b6af4;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    transition: color 0.3s ease-in-out;
+}
+
+nav ul li a:hover {
+    color: #3c4551;
+}
+
+/* Main content styles */
+main {
+    padding: 40px;
+}
+
+section {
+    margin-bottom: 60px;
+}
+
+img {
+    max-width: 50%;
+    height: auto;
+    margin: 20px;
+}
+
+/* About Me section styles */
+.about-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+
+/* Project card styles */
+.project-card {
+    margin: 20px;
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+.project-card:hover {
+    transform: scale(1.05);
+}
+
+.project-card img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+/* Contact section styles */
+.contact-form {
+    background-color: #fff;
+    padding: 30px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+.contact-form h2 {
+    margin-bottom: 20px;
+}
+
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.contact-form button {
+    background-color: #ff6600;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.contact-form button:hover {
+    background-color: #ff3300;
+}
+
+.contact-info {
+    background-color: #fff;
+    padding: 30px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+.contact-info h2 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.contact-info p {
+    margin-bottom: 10px;
+    color: #777;
+}
+
+.contact-info ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.contact-info ul li {
+    margin-bottom: 5px;
+}
+
+.contact-info ul li a {
+    text-decoration: none;
+    color: #ff6600;
+    transition: color 0.3s ease-in-out;
+}
+
+.contact-info ul li a:hover {
+    color: #ff3300;
+    font-weight: bold;
+}
+
+/* Social media icons */
+.contact-info .social-icons {
+    margin-top: 20px;
+    list-style-type: none;
+    padding: 0;
+}
+
+.contact-info .social-icons li {
+    display: inline;
+    margin-right: 10px;
+}
+
+.contact-info .social-icons a {
+    text-decoration: none;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.contact-info .social-icons img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 2px solid #ff6600;
+    transition: transform 0.3s ease-in-out, border-color 0.3s ease-in-out;
+}
+
+.contact-info .social-icons a:hover img {
+    transform: scale(1.2);
+    border-color: #ff3300;
+}
+
+/* Media queries for responsive layout */
+@media screen and (max-width: 768px) {
+    /* Adjusting the size of the navigation links for smaller screens */
+    nav ul li a {
+        font-size: 0.8em;
+    }
+
+    /* Adjusting the size of the developer's photo for smaller screens */
+    #about img {
+        width: 100px;
+        height: 100px;
+    }
+
+    /* Adjusting the size of work images for smaller screens */
+    .work-images img {
+        width: 150px;
+    }
+
+    /* Making the first work image larger for smaller screens */
+    .work-images img:first-child {
+        width: 200px;
+    }
+}
