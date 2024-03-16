@@ -1,70 +1,188 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
-    <link rel="stylesheet" href="/css/styles.css">
-</head>
-<body>
+<html lang="en-gb">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="description" content="Justin Morris template for portfolio site" />
+    <title>Justin Morris | Web Developer</title>
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+    <!-- MAIN LOGO / NAV -->
     <header>
-        <nav>
-            <ul>
-                <li><a href="#about">About Me</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
+      <h1><a href="index.html">Justin Morris</a></h1>
+      <nav>
+        <ul class="topNav">
+          <li><a href="#about">About Me</a></li>
+          <li><a href="#work">Work</a></li>
+          <li><a href="#contact">Contact Me</a></li>
+          <li><a href="#work">Resume</a></li>
+        </ul>
+      </nav>
     </header>
-    <main>
-        <section id="about">
-            <h1>About Me</h1>
-            <div class="about-content">
-                <img src="/assets/profile.jpg" alt="My Photo">
-                <p>Hello, I am Justin Morris. I am a web developer with a passion for creating user-friendly and visually appealing websites.</p>
-            </div>
-        </section>
-        <section id="projects">
-            <h1>Projects</h1>
-            <div class="project-card">
-                <img class="projectImg" src="/assets/project1.jfif" alt="Project 1">
-                <h2>Project 1</h2>
-                <p>Description of Project 1.</p>
-                <a href="#">View Project</a>
-            </div>
-            <div class="project-card">
-                <img class="projectImg" src="/assets/project2.jfif" alt="Project 2">
-                <h2>Project 2</h2>
-                <p>Description of Project 2.</p>
-                <a href="#">View Project</a>
-            </div>
-            <!-- Add more project cards as needed -->
-        </section>
-        <section id="contact">
-            <h1>Contact</h1>
-            <div class="contact-form">
-                <h2>Get in Touch</h2>
-                <form>
-                    <input type="text" placeholder="Your Name" required>
-                    <input type="email" placeholder="Your Email" required>
-                    <textarea placeholder="Your Message" required></textarea>
-                    <button type="submit">Send</button>
-                </form>
-            </div>
-            <div class="contact-info">
-                <h2>Contact Information</h2>
-                <p>Contact me at: jsmorris38@email.com</p>
-                <p>Follow me on social media:</p>
-                <ul class="social-icons">
-                    <li><a href="#"><img src="/assets/linkedin-icon.png" alt="LinkedIn"></a></li>
-                    <li><a href="#"><img src="/assets/twitter-icon.png" alt="Twitter"></a></li>
-                    <li><a href="#"><img src="/assets/github-icon.png" alt="GitHub"></a></li>
-                </ul>
-            </div>
-        </section>
+
+    <!-- HERO BANNER -->
+    <section class="hero-banner">
+      <div>
+        <h2>Full Stack Web Developer</h2>
+      </div>
+    </section>
+
+    <main class="container">
+      <!-- ABOUT ME SECTION-->
+      <section class="page-section" id="about">
+        <h2>About Me</h2>
+      </section>
+      <section>
+        <img class="profile" src="/assets/justin.png" alt="profile image">
+        <p>
+            Greetings! I'm Justin Morris, a passionate learner on the journey 
+            to mastering full-stack web development. My fascination with technology 
+            and its potential to transform ideas into tangible solutions ignited my 
+            interest in this field. As a dedicated enthusiast, I'm committed 
+            to honing my skills and delving into the intricate world of programming. 
+            With each line of code I write, I embrace the challenge of turning 
+            concepts into reality while striving for innovation and efficiency.
+        </p>
+        <br />
+        <p>
+            In my pursuit of becoming a proficient developer, I prioritize 
+            continuous growth and learning. From grasping the fundamentals 
+            of HTML and CSS to exploring the complexities of JavaScript 
+            frameworks, I immerse myself in diverse aspects of web development. 
+            Through hands-on projects and collaborative experiences, I cultivate 
+            adaptability and problem-solving skills essential for navigating 
+            the dynamic landscape of software engineering. With every 
+            project I undertake.
+        </p>
+        <br />
+        <p>
+            "Beyond coding, I am driven by a deep-rooted curiosity 
+            and a desire to make a positive impact through technology. 
+            I view each project as an opportunity to innovate 
+            and create solutions that resonate with users. 
+            Whether it's crafting intuitive user interfaces or 
+            optimizing backend functionalities, I approach every 
+            task with enthusiasm and a determination to deliver excellence. 
+            With a strong foundation in teamwork and effective communication, 
+            I look forward to collaborating with like-minded 
+            individuals and contributing my skills to projects 
+            that push boundaries and inspire change.
+        </p>
+      </section>
+
+      <!-- PORTFOLIO SECTION -->
+      <section class="page-section" id="work">
+        <h2>Work</h2>
+      </section>
+
+      <section id="portfolio">
+        <figure class="p0">
+          <a href="#">
+            <img
+              src="/assets/project-1.PNG"
+              alt="portfolio 4"
+              width="500"
+              height="400"
+            />
+            <figcaption>
+              <h3>Marketing Website for Horiseon</h3>
+              <p>HTML CSS</p>
+            </figcaption>
+          </a>
+        </figure>
+        <figure class="p1">
+          <a href="#">
+            <img
+              src="/assets/project1.jfif"
+              alt="portfolio 3"
+              width="500"
+              height="200"
+            />
+            <figcaption>
+              <h3>LED Walll</h3>
+              <p>Node/IoT</p>
+            </figcaption>
+          </a>
+        </figure>
+        <figure class="p2">
+          <a href="#">
+            <img
+              src="/assets/project-3.png"
+              alt="portfolio 2"
+              width="500"
+              height="200"
+            />
+            <figcaption>
+              <h3>Calculator</h3>
+              <p>React/JavaScript/CSS</p>
+            </figcaption>
+          </a>
+        </figure>
+        <figure class="p3">
+          <a href="#">
+            <img
+              src="/assets/project1.jfif"
+              alt="portfolio 1"
+              width="500"
+              height="200"
+            />
+            <figcaption>
+              <h3>Pastel Puzzels</h3>
+              <p>MERN Stack</p>
+            </figcaption>
+          </a>
+        </figure>
+        <figure class="p4">
+          <a href="#">
+            <img
+              src="/assets/project2.jfif"
+              alt="portfolio 5"
+              width="500"
+              height="200"
+            />
+            <figcaption>
+              <h3>Run Buddy</h3>
+              <p>HTML/CSS</p>
+            </figcaption>
+          </a>
+        </figure>
+      </section>
+
+      <!-- CONTACT SECTION-->
+      <section class="page-section" id="contact">
+        <h2>Contact Me</h2>
+      </section>
+      <section>
+        <ul class="bottomNav">
+          <li><a href="tel:+5555555555">Call Justin Now!</a></li>
+          <li>
+            <a href="mailto:justinmorris@web.com">justinmorris@web.com</a>
+          </li>
+          <li>
+            <a
+              href="https://github.com/jmorris38"
+              target="_blank"
+              rel="noopener noreferrer"
+              >My GitHub</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://twitter.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Hit me on Twitter</a
+            >
+          </li>
+          <li>
+            <a href="#" rel="noopener noreferrer">My Youtube Channel</a>
+          </li>
+        </ul>
+      </section>
     </main>
-    <footer>
-        &copy; 2024 My Portfolio
-    </footer>
-</body>
+  </body>
 </html>
