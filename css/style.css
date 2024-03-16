@@ -114,7 +114,7 @@ header nav {
 
 /* Hero banner styles */
 .hero-banner {
-  background-image: url("/assets/title_bg.jpg"); /* Set background image */
+  background-image: url("../assets/title_bg.jpg"); /* Set background image */
   background-position: top; /* Set background position */
   background-size: cover; /* Set background size */
   background-attachment: fixed; /* Set background attachment */
